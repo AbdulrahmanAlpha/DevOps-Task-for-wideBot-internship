@@ -1,11 +1,6 @@
 ## Overview
 This Terraform code provisions an infrastructure on AWS that includes a Virtual Private Cloud (VPC) with public and private subnets, an internet gateway, security groups for load balancing, web servers, Redis, MongoDB and SQL Server, an Elastic Kubernetes Service (EKS) cluster, and Kubernetes deployments and services for web app, databases and SQL Server. It also creates a load balancer and target group for the web app.
 
-## Infrastructure Architecture
-
-![Diagram](./Blank%20diagram.jpeg)
-
-
 ## Components
 
 ### VPC
@@ -46,6 +41,10 @@ Associates the key pair with the instances in the Auto Scaling Group.
 ### SSL Certificate
 - Creates an SSL certificate using AWS Certificate Manager to encrypt traffic between the web application and the load balancer.
 - Configures the load balancer to use the SSL certificate for HTTPS traffic.
+
+## Infrastructure Architecture
+
+![Diagram](./Blank%20diagram.jpeg)
 
 ## Prerequisites
 Before you can use this Terraform code, you need to have the following:
